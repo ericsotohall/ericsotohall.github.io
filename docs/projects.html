@@ -1,21 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eric Soto-Hall's Projects</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* Temporary inline styles to make the project card visible immediately */
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .project-card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      width: 300px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+    .project-card img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    .project-card a button {
+      padding: 8px 12px;
+      cursor: pointer;
+      background-color: #007BFF;
+      border: none;
+      color: white;
+      border-radius: 4px;
+    }
+    .project-card a button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
   <h1>Projects</h1>
-  <h2>Projects</h2>
-<div class="projects">
-  <div class="project-card">
-    <h3>Jeep Daylighter Install</h3>
-    <p>
-      Auxiliary off-road lighting install with relay-controlled wiring,
-      fused power, and real-world testing.
-    </p>
-    <a href="projects/jeep-daylighters.html">View Project →</a>
+
+  <div class="projects">
+    <div class="project-card">
+      <h3>Jeep Daylighter Install</h3>
+      <img src="../images/jeep-daylighters/01-Jeep_without_daylighters.jpg" alt="Jeep Daylighter Install">
+      <p>
+        Auxiliary off-road lighting install with relay-controlled wiring,
+        fused power, and real-world testing.
+      </p>
+      <a href="jeep-daylighters.html">
+        <button>View Project →</button>
+      </a>
+    </div>
   </div>
-</div>
 
 </body>
 </html>
