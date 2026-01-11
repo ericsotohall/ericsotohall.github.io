@@ -120,3 +120,12 @@ li {
   width: 100%;
   border-radius: 6px;
 }
+
+/* =========================
+   Homepage Project Thumbnail
+   ========================= */
+
+.project-thumb {
+  width: 300px;
+  max-width: 90%;
+}
