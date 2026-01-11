@@ -96,6 +96,22 @@ img {
   gap: 15px;
 }
 
+/* =========================
+   Lists (Project Pages)
+   ========================= */
+
+ul {
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 1rem auto;
+  max-width: 700px;
+  text-align: left;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
 .photo-grid img {
   width: 100%;
   border-radius: 6px;
