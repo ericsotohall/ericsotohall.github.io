@@ -2,6 +2,7 @@
    Base / Global Styles
    ========================= */
 
+/* Body font, background, and global text alignment */
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -11,15 +12,18 @@ body {
 }
 
 /* =========================
-   Navigation
+   Navigation Bar
    ========================= */
 
+/* Top navbar container */
 .navbar {
-  background-color: #111;
-  padding: 1rem 2rem;
-  text-align: left;
+  background-color: #111;      /* Dark black */
+  padding: 0.75rem 2rem;       /* Vertical + horizontal padding */
+  text-align: left;             /* Name aligned left */
+  border-bottom: 1px solid #333; /* Thin separator line */
 }
 
+/* Navbar home link styling */
 .nav-home {
   color: white;
   font-size: 1.2rem;
@@ -28,34 +32,38 @@ body {
 }
 
 .nav-home:hover {
-  text-decoration: underline;
+  text-decoration: underline;  /* Simple hover effect */
 }
 
 /* =========================
-   Header
+   Header Banner
    ========================= */
 
+/* Black banner below navbar with centered title */
 header {
-  background-color: #111;
+  background-color: #111;      /* Match navbar */
   color: white;
-  padding: 2rem;
+  padding: 2.5rem 1rem;
+  text-align: center;
 }
 
 /* =========================
    Buttons
    ========================= */
 
+/* General button styling */
 .button {
   display: inline-block;
-  margin-top: 1rem;
-  padding: 10px 18px;
+  margin-top: 1.5rem;
+  padding: 12px 20px;
   background-color: #2c3e50;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
 }
 
+/* Button hover effect */
 .button:hover {
   background-color: #34495e;
 }
@@ -64,6 +72,7 @@ header {
    Images
    ========================= */
 
+/* Global image style */
 img {
   max-width: 100%;
   border-radius: 8px;
@@ -71,15 +80,29 @@ img {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Homepage project thumbnail */
+/* Homepage section layout to constrain content */
+section {
+  max-width: 900px;
+  margin: 2rem auto; /* Center section with vertical spacing */
+}
+
+/* Homepage project thumbnail size */
 .project-thumb {
   width: 300px;
+  max-width: 90%;
+}
+
+/* Center section headings and paragraphs */
+section h2,
+section p {
+  text-align: center;
 }
 
 /* =========================
    Work In Progress Banner
    ========================= */
 
+/* Yellow WIP banner for site under construction */
 .wip {
   background: #fff3cd;
   color: #856404;
@@ -91,19 +114,27 @@ img {
 }
 
 /* =========================
-   Photo Grid (Project Pages)
+   Project Pages / Photo Grid
    ========================= */
 
+/* Grid layout for multiple images */
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 15px;
 }
 
+/* Images inside photo grid */
+.photo-grid img {
+  width: 100%;
+  border-radius: 6px;
+}
+
 /* =========================
    Lists (Project Pages)
    ========================= */
 
+/* General list styling for readability */
 ul {
   list-style-position: inside;
   padding-left: 0;
@@ -114,18 +145,4 @@ ul {
 
 li {
   margin-bottom: 0.5rem;
-}
-
-.photo-grid img {
-  width: 100%;
-  border-radius: 6px;
-}
-
-/* =========================
-   Homepage Project Thumbnail
-   ========================= */
-
-.project-thumb {
-  width: 300px;
-  max-width: 90%;
 }
