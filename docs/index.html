@@ -32,6 +32,22 @@
       margin-top: 1rem;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
+
+    /* NEW: button styling */
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 10px 18px;
+      background-color: #2c3e50;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background-color: #34495e;
+    }
   </style>
 </head>
 
@@ -46,7 +62,20 @@
     This site is under construction. More content coming soon.
   </div>
 
-  <img src="photo1.jpg" alt="Project photo">
+  <!-- NEW: Project thumbnail + link -->
+  <section>
+    <h2>Jeep Daylighters</h2>
+
+    <a href="projects/jeep-daylighters.html">
+      <img src="07-Daylighter_covers.jpg" alt="Jeep Daylighters Project">
+    </a>
+
+    <br>
+
+    <a href="projects/jeep-daylighters.html" class="button">
+      View Project
+    </a>
+  </section>
 
 </body>
 </html>
