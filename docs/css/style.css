@@ -16,15 +16,15 @@ body {
    ========================= */
 
 /* Top navbar container */
-.navbar {
+/*.navbar {
   background-color: #111;      /* Dark black */
-  padding: 0.75rem 2rem;       /* Vertical + horizontal padding */
-  text-align: left;             /* Name aligned left */
-  border-bottom: 1px solid #333; /* Thin separator line */
-}
+  /*padding: 0.75rem 2rem;       /* Vertical + horizontal padding */
+  /*text-align: left;             /* Name aligned left */
+  /*border-bottom: 1px solid #333; /* Thin separator line */
+/*}
 
 /* Navbar home link styling */
-.nav-home {
+/*.nav-home {
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
@@ -33,16 +33,16 @@ body {
 
 .nav-home:hover {
   text-decoration: underline;  /* Simple hover effect */
-}
+/*}
 
 /* =========================
    Header Banner
    ========================= */
 
 /* Black banner below navbar with centered title */
-header {
-  background-color: #111;      /* Match navbar */
-  color: white;
+/*header {
+  /*background-color: #111;      /* Match navbar */
+  /*color: white;
   padding: 2.5rem 1rem;
   text-align: center;
 }
