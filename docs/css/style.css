@@ -88,8 +88,8 @@ section {
 
 /* Homepage project thumbnail size */
 .project-thumb {
-  /*width: 30px;
-  max-width: 90%;*/
+  width: 30px;
+  max-width: 90%;
 }
 
 /* Center section headings and paragraphs */
