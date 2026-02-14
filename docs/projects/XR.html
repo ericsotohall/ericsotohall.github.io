@@ -1,44 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Honda XR600 Frame-Up Restoration</title>
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <title>XR600R Rebuild | Eric Soto-Hall</title>
+    <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
-  <nav class="navbar">
-    <a href="../index.html" class="nav-home">Eric Soto Hall</a>
-  </nav>
-  
-  <h1>1995 Honda XR600 – Frame-Up Restoration</h1>
 
-  <p>
-    Complete frame-up restoration of a 1995 Honda XR600 dual-sport motorcycle.
-    Project involved full teardown to the bare frame, mechanical refurbishment,
-    suspension overhaul, and a ground-up electrical rebuild.
-    The factory wiring harness was removed and replaced with a custom-built harness,
-    including new routing, terminations, grounding strategy, and component integration.
-    Emphasis was placed on reliability, serviceability, and correct electrical practices
-    suitable for off-road vibration and environmental exposure.
-  </p>
+<div class="project-container">
 
-  <h2>Photo Gallery</h2>
+    <!-- ===================== -->
+    <!-- PROJECT TITLE -->
+    <!-- ===================== -->
 
-  <div class="photo-grid">
-    <img src="../images/XR600/01-XR_progress_start.jpg" alt="XR600 initial teardown and assessment">
-    <img src="../images/XR600/02-XR_progress_motor.jpg" alt="XR600 engine installation and rebuild progress">
-    <img src="../images/XR600/03-XR_progress_shocks.jpg" alt="XR600 suspension and shock installation">
-    <img src="../images/XR600/04-XR_progress_plastics.jpg" alt="XR600 reassembly with restored plastics">
-  </div>
+    <h1>Honda XR600R Rebuild</h1>
 
-  <h2>Technical Notes</h2>
-  <ul>
-    <li>Full frame-up teardown and reassembly</li>
-    <li>Custom wiring harness designed and built from scratch</li>
-    <li>12V motorcycle electrical system with upgraded grounding</li>
-    <li>Engine removal, inspection, and reinstallation</li>
-    <li>Suspension and chassis component refurbishment</li>
-    <li>Electrical routing optimized for vibration and off-road use</li>
-  </ul>
+    <!-- ===================== -->
+    <!-- LARGE THUMBNAIL -->
+    <!-- ===================== -->
+
+    <div class="hero-image">
+        <img src="../images/XR600/32-XR_thumbnail.jpeg" alt="XR600R Thumbnail">
+    </div>
+
+    <!-- ===================== -->
+    <!-- MAIN DESCRIPTION -->
+    <!-- ===================== -->
+
+    <div class="project-description">
+        <p>
+            This project documents the rebuild and street-legal refinement of my Honda XR600R. It is important to note that this is not the factory street-legal XR600L (often confused as “XL”). This motorcycle began as an off-road XR600R and had previously been converted using a Baja Designs dual-sport kit back when California registration rules still allowed such conversions (pre-2003).
+            I purchased the motorcycle completely disassembled for $500 with the goal of strengthening my mechanical fundamentals, deepening my understanding of motorcycle electrical systems, and creating a reliable daily-use machine capable of both commuting and desert riding.
+            The rebuild was completed over two months while I was finishing my electrical engineering degree, job searching, and managing other projects. The mechanical restoration included full inspection and service of nearly every system. The only major subsystems not rebuilt were suspension internals and wheel bearings due to tooling and budget limitations.
+            Unexpectedly, California DMV fees added approximately $1,000 to the total cost. Additional parts — including a refreshed electrical system, new tires, sprockets, ignition components, and aesthetic restoration — totaled approximately $750. This brought the full project cost to roughly $2,250, which remains on the low end of market value for an XR600R in comparable condition.
+            Beyond the finished motorcycle, this project provided invaluable lessons in diagnostics, system design, fabrication, budgeting, and long-term troubleshooting discipline.
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- ===================== -->
+    <!-- INITIAL BUILD -->
+    <!-- ===================== -->
+
+    <h2>Initial Build</h2>
+    <p>
+        The initial phase focused on cleaning, inventorying, and assessing the condition of every subsystem. The motorcycle was purchased fully disassembled, requiring careful identification and evaluation of all mechanical components.
+        Every major system was serviced or inspected, including the engine, braking system, frame, and controls. No internal engine work was performed beyond verification of valve clearance specification, timing chain alignment, and ignition timing. Compression was strong and the engine exhibited no symptoms requiring deeper disassembly, so the top and bottom end were left intact.
+        Suspension internals and wheel bearings were also left untouched due to tooling and material cost constraints. The objective during this phase was to establish a mechanically sound baseline before introducing electrical or performance modifications.
+    </p>
+
+    <div class="gallery">
+        <img src="../images/XR600/01-XR_progress_start.jpg">
+        <img src="../images/XR600/05-XR_frame_primer.jpeg">
+        <img src="../images/XR600/06-XR_frame_painted.jpeg">
+        <img src="../images/XR600/31-XR_motor.jpeg">
+        <img src="../images/XR600/19-XR_valve_and_decompression.jpeg">
+        <img src="../images/XR600/07-XR_rear_brake_caliper.jpeg">
+        <img src="../images/XR600/08-XR_spare_bolts.jpeg">
+        <img src="../images/XR600/02-XR_progress_motor.jpg">
+        <img src="../images/XR600/03-XR_progress_shocks.jpg">
+        <img src="../images/XR600/04-XR_progress_plastics.jpg">
+    </div>
+
+    <hr>
+
+    <!-- ===================== -->
+    <!-- GEARING -->
+    <!-- ===================== -->
+
+    <h2>Gearing</h2>
+    <p>
+        A known weak point of the XR platform is the transmission output shaft spline interface. Wear between the front sprocket and shaft splines can lead to catastrophic shaft damage.
+        To mitigate this risk, I installed a wide-profile front sprocket with increased spline contact area. Additionally, I changed the gearing ratio from 14-48 to 15-45. This reduces cruising RPM significantly, allowing approximately 80 mph highway cruising at lower engine speeds — better aligned with the intended use case of daily commuting and light desert riding.
+    </p>
+
+    <div class="gallery">
+        <img src="../images/XR600/30-XR_old_front_sprocket.PNG">
+        <img src="../images/XR600/29-XR_new_front_sprocket.PNG">
+        <img src="../images/XR600/09-XR_rear_sprocket_size.jpeg">
+    </div>
+
+    <hr>
+
+    <!-- ===================== -->
+    <!-- STATOR -->
+    <!-- ===================== -->
+
+    <h2>Pulse Generator & Stator</h2>
+    <p>
+        Ignition diagnostics became the most time-consuming portion of the rebuild.
+        Initial resistance measurements indicated the stator was out of specification while the pulse generator tested within range. After research, I upgraded to a 200W high-output stator (stock was ~60W). The increased output provides sufficient power for lighting accessories while maintaining strong ignition performance.
+        Despite the stator replacement, spark was still absent. The root cause was later traced to failure of the pulse generator pickup coil — a condition sometimes referred to as “green death,” where oxidation compromises the fine pickup winding after years of inactivity.
+        Both components required sourcing from niche suppliers with extended delivery times. Once replaced, the ignition system functioned reliably.</p>
+
+    <div class="gallery">
+        <img src="../images/XR600/17-XR_bad_stator_measurement.jpeg">
+        <img src="../images/XR600/21-XR_stator_removal.jpeg">
+        <img src="../images/XR600/22-XR_pulse_generator_install.jpeg">
+        <img src="../images/XR600/23-XR_pulse_generator_air_gap.jpeg">
+        <img src="../images/XR600/24-XR_old_and_new_pulse_generator.jpeg">
+    </div>
+
+    <hr>
+
+    <!-- ===================== -->
+    <!-- WIRING -->
+    <!-- ===================== -->
+
+    <h2>Wiring Harness</h2>
+    <p>
+        Because this XR600R was not factory street-legal, it utilized two separate harnesses:
+        • Ignition harness
+        • Accessory lighting harness
+        The ignition harness required continuity verification and moderate modification, but nearly all components (CDI, switches, connectors) needed replacement due to age or loss.
+        The accessory harness was rebuilt entirely from scratch. I manually recreated both harness schematics to understand system architecture before fabrication. The harness was constructed directly on the motorcycle and required hundreds of crimped connections.
+        I used SuperSeal connectors and mesh loom covering. The mesh was chosen over rigid conduit to allow drainage while maintaining abrasion resistance.
+    </p>
+
+    <div class="gallery">
+        <img src="../images/XR600/10-XR_old_wiring_harness.jpeg">
+        <img src="../images/XR600/16-XR_seperated_harnesses.jpeg">
+        <img src="../images/XR600/11-XR_new_CDI.jpeg">
+        <img src="../images/XR600/18-XR_combination_switch_internals.jpeg">
+        <img src="../images/XR600/33-XR_audio_jack_kill_switch.jpeg">
+        <img src="../images/XR600/27-XR_kill_switch.PNG">
+        <img src="../images/XR600/25_X.jpeg">
+        <img src="../images/XR600/28-XR_rear_wiring_harness.PNG">
+        <img src="../images/XR600/26-XR_first_start.PNG">
+    </div>
+
+    <hr>
+
+    <!-- ===================== -->
+    <!-- CAPACITOR -->
+    <!-- ===================== -->
+
+    <h2>Capacitor System</h2>
+    <p>
+        To improve low-RPM electrical performance, I designed and 3D-printed a housing for a capacitor bank. The capacitor functions as an energy buffer, stabilizing voltage during idle and improving lighting consistency.
+        This reduces stress on the regulator-rectifier while ensuring headlights and indicators remain bright at low engine speeds.
+    </p>
+
+    <div class="gallery">
+        <img src="../images/XR600/20-XR_cap_holder_complete.jpeg">
+        <img src="../images/XR600/12-XR_cap_holder_design.jpeg">
+        <img src="../images/XR600/13-XR_cap_holder_spacing.jpeg">
+        <img src="../images/XR600/14-XR_cap_holder_slice.jpeg">
+        <img src="../images/XR600/15-XR_cap_holder.jpeg">
+    </div>
+
+</div>
 
 </body>
 </html>
